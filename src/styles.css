@@ -1,1 +1,285 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/*============    ШРИФТЫ    ===========*/
+
+@font-face {
+    font-family: 'SignikaRegular';
+    src: url('/assets/fonts/SignikaRegular.eot');
+    src: url('/assets/fonts/SignikaRegular.eot') format('embedded-opentype'),
+         url('/assets/fonts/SignikaRegular.woff2') format('woff2'),
+         url('/assets/fonts/SignikaRegular.woff') format('woff'),
+         url('/assets/fonts/SignikaRegular.ttf') format('truetype'),
+         url('/assets/fonts/SignikaRegular.svg#SignikaRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'SignikaBold';
+    src: url('/assets/fonts/SignikaBold.eot');
+    src: url('/assets/fonts/SignikaBold.eot') format('embedded-opentype'),
+         url('/assets/fonts/SignikaBold.woff2') format('woff2'),
+         url('/assets/fonts/SignikaBold.woff') format('woff'),
+         url('/assets/fonts/SignikaBold.ttf') format('truetype'),
+         url('/assets/fonts/SignikaBold.svg#SignikaBold') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('/assets/fonts/RobotoRegular.eot');
+    src: url('/asset/fonts/RobotoRegular.eot') format('embedded-opentype'),
+         url('/assets/fonts/RobotoRegular.woff2') format('woff2'),
+         url('/assets/fonts/RobotoRegular.woff') format('woff'),
+         url('/assets/fonts/RobotoRegular.ttf') format('truetype'),
+         url('/assets/fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('/assets/fonts/RobotoBold.eot');
+    src: url('/assets/fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('/assets/fonts/RobotoBold.woff2') format('woff2'),
+         url('/assets/fonts/RobotoBold.woff') format('woff'),
+         url('/assets/fonts/RobotoBold.ttf') format('truetype'),
+         url('/assets/fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+
+
+
+/*============= ОБЩИЕ НАСТРОЙКИ =========*/
+a:hover,
+a:focus,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.video-responsive { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow:hidden;
+  /*border: 2px solid #ffffff;
+  border-radius: 3px; */
+  /*padding-right: 40px;*/
+} 
+.video-responsive iframe, 
+.video-responsive object, 
+.video-responsive embed {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%; 
+}
+
+.inline {
+    display: inline;
+}
+/*=================  ШАПКА ======================*/  
+
+header {
+    padding-top:10px;
+    background-color: #a05ec0;
+    /*font-family: 'SignikaBold';*/
+    color: #ffffff;
+    /*border-bottom: 3px solid #ffffff;*/
+    font-family: 'RobotoRegular';
+}
+header h1 {
+    padding-left:10px;
+}
+
+header .navigate {
+    color: black;
+}
+
+header nav {
+    padding-top:15px;
+    padding-left: 5%;
+}
+
+header nav a {
+    /*font-family: 'SignikaBold';*/
+    font-family: 'RobotoRegular';
+    /*text-transform: uppercase;*/
+    font-size:18px;
+    padding: 22px 12px;
+    color: black;
+    /*border: 1px solid #ffffff;*/
+
+}
+
+header nav a:hover {
+    text-decoration: none;
+    color:#0eef78;
+    border-top: 5px solid #ffffff;
+    /*-moz-transition: all 0.6s 0.06s ease;
+    -o-transition: all 0.6s 0.06s ease;
+    -webkit-transition: all 0.6s 0.06s ease;*/
+}
+
+header .background {
+
+}
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+
+#main {
+    background: url(/assets/img/background.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: #ffffff;
+    color:black;
+    padding-top: 30px;
+    /*font-family: 'SignikaBold';*/
+    font-family: 'RobotoRegular';
+}
+
+#main .android {
+    background-color:transparent;
+    padding:12px 26px;
+    font-size:18px;
+    /*font-family: 'SignikaRegular';*/
+    font-family: 'RobotoRegular';
+    border: 2px solid black;
+}
+
+#main .apple {
+    background-color:transparent;
+    padding:12px 49px;
+    font-size:18px;
+    /*font-family: 'SignikaRegular';*/
+    font-family: 'RobotoRegular';
+    border: 2px solid black;
+}
+
+#main button:hover {
+    background-color:#0eef78;
+}
+
+#main h1 {
+    /*text-transform: uppercase;*/
+    padding-bottom: 20px;
+}
+
+#main img {
+    padding-left: 40px;
+}
+
+#main .padding {
+    padding-bottom: 70px;
+}
+
+
+/*==============   ДОСТОИНСТВА   =============*/
+#features {
+    padding-top: 50px;
+    background-color: #ffffff;
+}
+
+#features h1 {
+    /*font-family: 'SignikaBold';*/
+    font-family: 'RobotoBold';
+    text-transform:uppercase;
+    padding-bottom: 70px;
+}
+
+#features i {
+    color: #a05ec0;
+}
+
+#features h4 {
+    /*font-family: 'SignikaBold';*/
+    font-family: 'RobotoBold';
+    text-transform: uppercase;
+}
+
+#features .padding {
+    padding-bottom: 70px;
+}
+
+/*==============   НАШИ ПРЕДЛОЖЕНИЯ ============*/
+
+
+#price {
+    padding-top: 70px;
+    background-color: #a05ec0;
+    color: #ffffff;
+}
+
+#price h1 {
+    font-family: 'SignikaBold';
+    text-transform: uppercase;
+}
+
+#price h3 {
+    /*font-family: 'SignikaBold';*/
+    font-family: 'RobotoBold';
+    padding-bottom: 70px;
+}
+
+#price .padding {
+    padding-bottom: 70px;
+}
+
+
+
+
+/*============ КАК РАБОТАЕТ НАШ СЕРВИС ========*/
+
+
+
+
+/*============== НЕДАВНИЕ ОБЪЯВЛЕНИЯ =====*/
+
+
+/*============  ОТЗЫВЫ КЛИЕНТОВ  =========*/
+
+
+/*============ ФУТЕР ====================*/
+
+
+/*=============== ЛОГИН ===============*/
+
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ПОДВАЛ    ===========*/
+
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+
+/*============    	АДАПТИВ    ===========*/
+
+
+@media(min-width:0px) and (max-width:320px) {
+	
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+	
+}
