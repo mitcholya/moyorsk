@@ -72,6 +72,16 @@
          url('/assets/fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
 }
 
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    src: url('/asset/fonts/OpenSansExtraBold.eot');
+    src: url('/assets/fonts/OpenSansExtraBold.eot') format('embedded-opentype'),
+         url('/assets/fonts/OpenSansExtraBold.woff2') format('woff2'),
+         url('/assets/fonts/OpenSansExtraBold.woff') format('woff'),
+         url('/assets/fonts/OpenSansExtraBold.ttf') format('truetype'),
+         url('/assets/fonts/OpenSansExtraBold.svg#OpenSansExtraBold') format('svg');
+}
+
 
 
 /*============= ОБЩИЕ НАСТРОЙКИ =========*/
@@ -116,7 +126,7 @@ ul li {
 /*============    ГЛАВНЫЙ ЭКРАН    ===========*/
 
 #main nav a {
-    font-family: 'OpenSansRegular';
+    font-family: 'OpenSansBold';
     font-size:18px;
     padding: 54px 12px;
     color: #ffffff;
@@ -140,35 +150,37 @@ ul li {
     background: url(/assets/img/background.jpg) no-repeat center center;
     background-size: cover;
     color:#ffffff;
-    font-family: 'OpenSansLight';
+    font-family: 'OpenSansBold';
     margin-bottom:-190px;
 }
 
 #main .android {
-    background-color:transparent;
-    padding:24px 34px;
+    padding:15px 15px;
     font-size:24px;
     /*font-family: 'SignikaRegular';*/
-    font-family: 'OpenSansLight';
+    font-family: 'OpenSansBold';
     border: 2px solid #ffffff;
     margin-right: 30px;
     border-radius: 5px;
+    background-color:#b059ad;
 }
 
 #main .apple {
-    background-color:transparent;
-    padding:24px 78px;
+    /*background-color:transparent;*/
+    padding:15px 50px;
     font-size:24px;
     /*font-family: 'SignikaRegular';*/
-    font-family: 'OpenSansLight';
+    font-family: 'OpenSansBold';
     border: 2px solid #ffffff;
     margin-right:30px;
     border-radius: 5px;
+    background-color:#b059ad;
 }
 
 #main button:hover {
     color: #ffffff;
-    background-color:#b059ad;
+    background-color:transparent;
+    
 }
 
 #main .logo {
@@ -177,6 +189,7 @@ ul li {
 
 #main .logo-text {
     padding-top: 18px;
+    font-family: 'OpenSansBold';
 }
 
 #main .heading {
@@ -213,7 +226,7 @@ ul li {
 
 #features h1 {
     /*font-family: 'SignikaBold';*/
-    font-family: 'OpenSansRegular';
+    font-family: 'OpenSansExtraBold';
     padding-bottom: 70px;
     font-size: 42px;
 }
@@ -238,17 +251,22 @@ ul li {
 
 #price {
     padding-top: 70px;
-    background-color: #a05ec0;
+    background-color: #ffffff;
     color: #ffffff;
+    background: url(/assets/img/background2.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 #price h1 {
-    font-family: 'SignikaBold';
+    font-family: 'OpenSansExtraBold';
+    font-size: 36px;
+    padding-bottom: 20px;
 }
 
 #price h3 {
     /*font-family: 'SignikaBold';*/
-    font-family: 'RobotoBold';
+    font-family: 'OpenSansExtraBold';
+    font-size: 24px;
     padding-bottom: 70px;
 }
 
@@ -256,8 +274,83 @@ ul li {
     padding-bottom: 70px;
 }
 
+#price h2 {
+    font-family: 'OpenSansExtraBold';
+    font-size: 24px;
+    padding: 9px 0px 9px 0px;
+    background-color: #9955ac;
+    border-radius: 8px;
+    margin-left:25px;
+    margin-right: 25px;
+    opacity: .99; 
+    /*z-index: 1;
+    position: absolute;*/
+}
 
+#price p {
+    font-family: 'OpenSansExtraBold';
+    font-size: 24px;
+}
 
+#price h5 {
+    font-family: 'OpenSansExtraBold';
+    font-size: 24px;
+    padding: 20px 0px 20px 0px;
+    background-color: #424646;
+    margin-left:35px;
+    margin-right: 35px;
+    border-radius: 8px;
+    margin-top:-20px;
+    /*z-index: 1;*/
+    /*position:absolute;*/
+}
+
+#price button {
+    font-family: 'OpenSansExtraBold';
+    font-size: 18px;
+    padding: 8px 5px 8px 5px;
+    background-color: #fe637e;
+    border: none;
+    border-radius: 8px;
+    margin-top: -20px;
+    /*position:absolute;*/
+}
+
+#price .h3-color {
+    color: #fe637e;
+}
+
+#price .free {
+    background-color: #6eba90;
+}
+
+#price .bronze {
+    background-color: #9d8064;
+}
+
+#price .silver {
+    background-color: #aeaeae;
+}
+
+#price .gold {
+    background-color: #edcd35;
+}
+/*============ ПРОМОМ РОЛИК ===================*/
+
+#video h1 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-family: 'OpenSansExtraBold';
+    font-size: 36px;
+}
+
+#video {
+    padding-bottom: 240px;
+}
+
+/*#video .video-responsive {
+    padding-bottom: 70px;
+} */
 
 /*============ КАК РАБОТАЕТ НАШ СЕРВИС ========*/
 
@@ -332,7 +425,7 @@ ul li {
     margin: 0 auto;
     /*font-family: Verdana, sans-serif;*/
     font-size: 24px;
-    font-family: 'OpenSansLight'
+    font-family: 'OpenSansBold';
 }
 
 .li-padding {
@@ -433,7 +526,7 @@ a {
 
 .news-headlines .selected {
     color: #b059ad;
-    font-family:'OpenSansBold';
+    font-family:'OpenSansExtraBold';
 }
 
   .news-preview img {
