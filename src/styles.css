@@ -151,36 +151,39 @@ ul li {
     background-size: cover;
     color:#ffffff;
     font-family: 'OpenSansBold';
-    margin-bottom:-190px;
+    margin-bottom:-140px;
 }
 
 #main .android {
-    padding:15px 15px;
+    /*padding:15px 15px;
     font-size:24px;
-    /*font-family: 'SignikaRegular';*/
+    font-family: 'SignikaRegular';
     font-family: 'OpenSansBold';
     border: 2px solid #ffffff;
     margin-right: 30px;
     border-radius: 5px;
-    background-color:#b059ad;
+    background-color:#b059ad;*/
+    background-color:transparent;
+    border:none;
 }
 
 #main .apple {
-    /*background-color:transparent;*/
-    padding:15px 50px;
+    background-color:transparent;
+    border:none;
+    /*padding:15px 50px;
     font-size:24px;
-    /*font-family: 'SignikaRegular';*/
+    font-family: 'SignikaRegular';
     font-family: 'OpenSansBold';
     border: 2px solid #ffffff;
     margin-right:30px;
     border-radius: 5px;
-    background-color:#b059ad;
+    background-color:#b059ad;*/
 }
 
 #main button:hover {
     color: #ffffff;
     background-color:transparent;
-    
+    border: none; 
 }
 
 #main .logo {
@@ -205,13 +208,14 @@ ul li {
 
 #main .button-padding {
     padding-bottom: 75px;
+    padding-right: 60px;
 }
 
 #main .mobile {
     background: url(/assets/img/mobile.png) no-repeat center center;
     background-size: cover;
-    width: 361px;
-    height: 778px;
+    width: 250px;
+    height: 539px;
     display:inline-block;
     padding-top:-10px;
 }
@@ -424,7 +428,7 @@ ul li {
     max-width: 500px;
     margin: 0 auto;
     /*font-family: Verdana, sans-serif;*/
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'OpenSansBold';
 }
 
@@ -450,8 +454,8 @@ a {
 }
 
   .news-headlines li {
-    padding: 5px 20px 5px 24px;
-    margin-bottom: 30px;
+    /*padding: 5px 20px 5px 24px;*/
+    margin-bottom: 20px;
     position: relative;
     z-index: 20;
     color: #ffffff;
@@ -536,7 +540,7 @@ a {
     height: auto;
     max-width: 461px;
     max-height: 642px;
-    margin: 0 auto 0px 6px;
+    margin: 0 auto 0px 0px;
     /*margin-bottom: 10px*/
   } 
 
@@ -586,9 +590,9 @@ a {
 
 .news-demo {
   background-color:transparent;
-  padding-right: 8px;
+  /*padding-right: 8px;*/
   /*margin-left: -250px;*/
-  padding-top:145px;
+  padding-top:100px;
   padding-bottom: 300px;
 }
 .news-demo h1 {
