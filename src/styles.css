@@ -105,6 +105,7 @@ ul li {
   /*border: 2px solid #ffffff;
   border-radius: 3px; */
   /*padding-right: 40px;*/
+  margin-bottom: 100px;
 } 
 .video-responsive iframe, 
 .video-responsive object, 
@@ -120,6 +121,7 @@ ul li {
     display: inline-block;
 }
 
+ /*html { overflow:  hidden; }*/
 
 /*=================  ШАПКА ======================*/
 
@@ -256,9 +258,9 @@ ul li {
 #price {
     padding-top: 70px;
     background-color: #ffffff;
-    color: #ffffff;
-    background: url(/assets/img/background2.jpg) no-repeat center center;
-    background-size: cover;
+    color:#424646;
+    /*background: url(/assets/img/background2.jpg) no-repeat center center;
+    background-size: cover;*/
 }
 
 #price h1 {
@@ -313,10 +315,11 @@ ul li {
     font-family: 'OpenSansExtraBold';
     font-size: 18px;
     padding: 8px 5px 8px 5px;
-    background-color: #fe637e;
+    background-color: #a05ec0;
     border: none;
     border-radius: 8px;
     margin-top: -20px;
+    color:#ffffff;
     /*position:absolute;*/
 }
 
@@ -324,9 +327,9 @@ ul li {
     color: #fe637e;
 }
 
-#price .free {
+/*#price .free {
     background-color: #6eba90;
-}
+}*/
 
 #price .bronze {
     background-color: #9d8064;
@@ -339,17 +342,66 @@ ul li {
 #price .gold {
     background-color: #edcd35;
 }
+
+#price .panel-default {
+    border-radius: 3px 3px 0px 0px;
+    border: 1px solid #a05ec0;
+    color: #aeaeae;
+}
+
+#price .panel-body {
+    border-top: 1px solid #a05ec0;
+    
+}
+
+#price .panel-price {
+    border-bottom: 1px solid #a05ec0;
+    border-top: 1px solid #a05ec0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#price .panel p {
+    font-size: 36px;
+}
+
+#price .panel-heading {
+    font-family: 'OpenSansExtraBold';
+    font-size: 33px;
+}
+
+#price img {
+    padding-bottom: 10px;
+}   
+
+#price .free {
+    color: red;
+}
 /*============ ПРОМОМ РОЛИК ===================*/
 
 #video h1 {
-    padding-top: 100px;
+    padding-top:40px;
     padding-bottom: 40px;
     font-family: 'OpenSansExtraBold';
     font-size: 36px;
 }
 
 #video {
-    padding-bottom: 240px;
+    /*padding-bottom: 240px;*/
+    background-color: #a05ec0;
+    color: #ffffff;
+    
+}
+
+#video button {
+    color:#ffffff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#video h3 {
+    padding-top: 125px;
 }
 
 /*#video .video-responsive {
