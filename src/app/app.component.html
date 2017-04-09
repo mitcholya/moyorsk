@@ -20,11 +20,12 @@
           <div class="row">
             <ul>
               <li class="list-inline">
-                <a href="#">Главная</a>
-                <a href="#">Разделы</a>
-                <a href="#">Презентация</a>
-                <a href="#">Партнерам</a>
-                <a href="#">Контакты</a>
+                <a href="#main">Главная</a>
+                <a href="#features">Приложение</a>
+                <!--<a href="#">Видео</a>-->
+                <a href="#price">Партнерам</a>
+                <a href="#discount">Дисконт</a>
+                <a href="#footer">Контакты</a>
               </li>
             </ul>
           </div>
@@ -40,16 +41,22 @@
               Push-уведомления и многе<br>
                     другое. </h1>-->
             <div class="button-padding"> 
-             <button class="android ">
-               <!--<i class="fa fa-android" aria-hidden="true"></i>
-               Google Play-->
-               <img src="/assets/img/google.png" alt="Google Play" class="img-responsive">
+             <button class="android " (click)="toGooglePaly()">
+               <img src="/assets/img/google.png" alt="Google Play" class="img-responsive center-block">
+               <!--<i class="fa fa-android" aria-hidden="true"></i>-->
+               <!--Google Play-->
               </button>
-             <button class="apple ">
+              <!--<a class="link" href="https://play.google.com/store/apps/details?id=ru.moygorod.orsk">
+              
+              </a>-->
+
+             <button class="apple " (click)="toAppleStore()">
+               <img src="/assets/img/apple.png" alt="Apple Store" class="img-responsive center-block"> 
                <!--<i class="fa fa-apple" aria-hidden="true"></i>
                Apple-->
-               <img src="/assets/img/apple.png" alt="Apple Store" class="img-responsive">
               </button>
+              <!--<a class="link" href="https://itunes.apple.com/us/app/id1207930011?l=ru&ls=1&mt=8">
+              </a>-->
             </div>  
       </div>
       <div class="row ">
@@ -198,9 +205,12 @@
         <p>Чтобы узнать наши последние новости или просто связаться с нами.
           Вы можете посетить наше группы в социалдьных сетях.
         </p>
-        <button><i class="fa fa-vk fa-3x" aria-hidden="true"></i></button>
-        <button><i class="fa fa-odnoklassniki fa-3x" aria-hidden="true"></i></button>
-        <button><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></button>
+        <!--<button></button>-->
+        <a href="https://vk.com/moy_orsk"> <i class="fa fa-vk fa-3x" aria-hidden="true"></i></a>
+        <!--<button></button>-->
+        <a href="https://ok.ru/group/53143611310210"><i class="fa fa-odnoklassniki fa-3x" aria-hidden="true"></i></a>
+        <!--<button></button>-->
+        <a href="https://www.instagram.com/moy_orsk/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i> </a>
       </div>
       <div class="col-md-8">
         <h1>Промо ролик</h1>
@@ -388,7 +398,37 @@
   </div>
 </section>-->
 
-<footer>
+<section id="discount">
+  <div class="container">
+    <div class="row text-center">
+      <h1>Дисконтная прогрмма</h1>
+      <div class="col-md-4">
+        <p class="number">1</p>
+        <p class="number-text">Совершайте покупки в магазинах
+          или приобретайте услуги у наших
+          партнеров по программе</p>
+        <img src="/assets/img/discount1.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-4">
+        <p class="number">2</p>
+        <p class="number-text  ">Предъявите нашу дисконтную
+          карту или наше скаченное
+          мобильное  приложение 
+          и получи скидку</p>
+        <img src="/assets/img/discount2.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-4">
+        <p class="number">3</p>
+        <p class="number-text">Получай удовольствие и 
+            и экономь на другие полкупки 
+            и услуги</p>
+        <img src="/assets/img/discount3.png" alt="" class="img-responsive center-block">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
   <div class="container">
     <div class="row">
       <h4></h4>
@@ -410,10 +450,17 @@
               <a href="#">Добавить Событие</a>
             </li>
           </ul>
+          <p>Наши контаткты:</p>
+          <ul>
+            <li><a href="tel:+79619008989">+79619008989</a></li>
+            <li><a href="tel:+79619008989">+79619008989</a></li>
+            <li><a href="mailto:moy_orsk@mail.ru">moy_orsk@mail.ru</a></li>
+          </ul>
         </div>
         <div class="col-md-6">
-          <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+          <!--<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>-->
           <div class="row">
+            <p>Задать нам ворос</p>
             <form action="">
               <div class="col-md-6">
                 <input type="text" placeholder="Имя">
@@ -428,7 +475,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row text-center">
         <p>
           All contents © copyright 2014 Business Theme. All rights reserved Designed by : Sasha Olya
         </p>

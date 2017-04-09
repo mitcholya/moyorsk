@@ -97,6 +97,16 @@ ul li {
     list-style-type: none;
 }
 
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+.body {
+    padding:0px;
+    margin: 0px;
+}
+
 .video-responsive { 
   position: relative; 
   padding-bottom: 56.25%; 
@@ -390,6 +400,7 @@ ul li {
     /*padding-bottom: 240px;*/
     background-color: #a05ec0;
     color: #ffffff;
+    font-family: 'OpenSansRegular';
     
 }
 
@@ -408,9 +419,34 @@ ul li {
     padding-bottom: 70px;
 } */
 
-/*============ КАК РАБОТАЕТ НАШ СЕРВИС ========*/
+/*============ ДИСКОНТНАЯ ПРОГРАММА ========*/
 
+#discount {
+    background-color: #ffffff;
+    font-family: 'OpenSansRegular';
+}
 
+#discount h1 {
+    padding-top: 70px;
+    font-family: 'OpenSansExtraBold';
+    padding-bottom: 60px;
+}
+
+#discount .number {
+    font-family: 'OpenSansExtraBold';
+    font-size: 48px;
+    color: #b01290;
+    padding-bottom: 30px;
+}
+
+#discount .number-text{
+    margin-bottom: 40px;
+}
+
+#discount img {
+    /*padding-top:20px;*/
+    padding-bottom: 100px;
+}
 
 
 /*============== НЕДАВНИЕ ОБЪЯВЛЕНИЯ =====*/
@@ -420,6 +456,18 @@ ul li {
 
 
 /*============ ФУТЕР ====================*/
+
+footer {
+    background-color: #a05ec0;
+    color: #ffffff;
+}
+
+footer form {
+    background-color: #aeaeae;
+    padding-top: 40px;
+    color: #424646;
+}
+
 
 
 /*=============== ЛОГИН ===============*/
