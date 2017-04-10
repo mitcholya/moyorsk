@@ -1,19 +1,12 @@
 <!--<h1>
   {{title}}
 </h1>-->
-<!--<header>
+<header id="header">
   <div class="container">
-  </div>
-</header>-->
-
-<section id="main">
-  <div class="container">
-    <div class="row">
-
   <div class="row">
-      <div class="col-md-5 ">  
-        <img src="/assets/img/logo.png" alt="Мой Орск" class="img-responsive logo inline">
-        <h1 class="inline logo-text">Мой Орск</h1>
+      <div class="col-md-5 logo">  
+        <img src="/assets/img/logo.png" alt="Мой Орск" class="img-responsive  inline">
+        <h1 class="inline">Мой Орск</h1>
       </div>
       <div class="col-md-7">
         <nav>
@@ -33,6 +26,12 @@
       </div>
     </div>
 
+  </div>
+</header>
+
+<section id="main">
+  <div class="container">
+  <div class="row">
     <div class="row">
       <!--<div class="col-md-5"></div>-->
       <div class="col-md-7 col-md-offset-5 text-center">
@@ -463,17 +462,20 @@
         </div>
         <div class="col-md-6">
           <!--<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>-->
-          <div class="row">
+          <div class="row color">
             <h4>Задать нам ворос</h4>
             <form action="" class="text-center">
+              <div class="row">
+
               <div class="col-md-6">
                 <input type="text" placeholder="Имя">
                 <input type="text" placeholder="Email">
                 <input type="text" placeholder="Телефон">
               </div>
-                <div class="col-md-6">
-                  <textarea name="" id="" cols="25" rows="6" placeholder="Введите вопрос"></textarea>  
-                </div>
+              <div class="col-md-6">
+                <p> <textarea name="" id="" cols="25" rows="6" placeholder="Введите вопрос"></textarea>  </p>
+              </div>
+              </div>
                 <button type="submit">Отправить</button>
             </form>
           </div>

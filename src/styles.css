@@ -146,23 +146,41 @@ html {
 
 /*============    ГЛАВНЫЙ ЭКРАН    ===========*/
 
-#main nav a {
+header {
+    height: 60px;   
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color:#a05ec0;
+    color:#ffffff;
+}
+
+header h1 {
+    margin: 0px;
+    padding-top: 4px;
+}
+
+
+header nav a {
     font-family: 'OpenSansBold';
     font-size:16px;
-    padding: 54px 12px;
+    padding: 40px 12px;
     color: #ffffff;
 
 }
 
-#main nav a:hover {
+header nav a:hover,
+header nav a:focus,
+/*header nav a:visited,*/
+header nav a:active {
     text-decoration: none;
     color:yellow;
     /*border-top: 5px solid #ffffff;*/
 }
 
-#main nav {
+header nav {
     /*padding-left: 38px;*/
-    padding-top: 45px;
+    padding-top: 20px;
 }
 
 
@@ -206,18 +224,26 @@ html {
     background-color:transparent;
     border: none; 
 }
-
-#main .logo {
+header .logo {
     padding-top: 0px;
+    font-family: 'OpenSansBold';
+    /*padding-bottom: 30px;*/
+    padding-top: 5px;
+
+
 }
 
-#main .logo-text {
+header img {
+        vertical-align: top;
+}
+
+header .logo-text {
     padding-top: 18px;
-    font-family: 'OpenSansBold';
+
 }
 
 #main .heading {
-    padding-top:46px;
+    padding-top:96px;
     padding-bottom:99px;
     font-size: 24px;
     /*padding-right: 78px;*/
@@ -422,6 +448,7 @@ html {
 
 #video a {
     padding: 10px 10px 10px 10px;
+    color: yellow;
 }
 
 #video h3 {
@@ -470,59 +497,67 @@ html {
 
 /*============ ФУТЕР ====================*/
 
-footer {
+#footer {
     background-color: #a05ec0;
     color: #ffffff;
     font-family: 'OpenSansRegular';
     font-size: 16px;
 }
 
-footer form {
+#footer form {
     background-color: #aeaeae;
     padding-top: 40px;
     color: #424646;
     /*padding-left: 20px;*/
 }
 
-footer .copyright {
+#footer .copyright {
     padding-top:10px;
     padding-bottom: 5px;
 }
 
-footer a:hover,
-        a:visited,
-        a:focus,
-        a:active {
+#footer a:hover,
+#footer a:visited,
+#footer a:focus,
+#footer a:active {
     text-decoration: none;
     color: yellow;
 }
 
-footer h4 {
+#footer h4 {
     padding-top: 20px;
     padding-bottom: 20px;
     color: yellow;
 }
 
-footer form input {
+#footer form input {
     border-radius: 5px;
     padding-bottom: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
-footer textarea {
+#footer textarea {
     border-radius: 5px;
     /*margin-right: 20px;*/
+    resize: none;
+    max-width: 190px;
+    /*display:inline-block;*/
+    font-size: 14px;
 }
 
-footer button {
+#footer button {
     padding: 5px 10px 5px 10px;
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 5px;
 }
 
-footer i {
+#footer i {
     color: yellow;
+}
+
+#footer color {
+    
 }
 
 
